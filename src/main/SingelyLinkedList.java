@@ -77,7 +77,19 @@ public class SingelyLinkedList {
     }
     public void insert(int data)
     {
-
+        if(head==null)
+        {
+            insertHead(data);
+        }
+        else
+        {
+            Node temp=this.head;
+            while(temp.next!=null)
+            {
+                temp=temp.next;
+            }
+            insertAfter(data, temp);
+        }
 
     }
 }
