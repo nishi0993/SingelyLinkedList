@@ -47,7 +47,8 @@ public class SingelyLinkedList {
         Node temp=this.head;//copy so that actual head do not change
         while(temp !=null)
         {
-
+            response.append(temp.getData());//add data in response
+            temp=temp.next;
         }
         response.append("]");
         return response.toString();
