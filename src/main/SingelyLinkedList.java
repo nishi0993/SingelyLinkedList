@@ -32,6 +32,10 @@ public class SingelyLinkedList {
         }
 
     }
-    private Node head;
-    private int size;
+    private Node head=null;
+    private int size=0;
+
+    public static void main(String[] args) {
+        SingelyLinkedList linkedList=new SingelyLinkedList();
+    }
 }
