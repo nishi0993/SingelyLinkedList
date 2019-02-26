@@ -37,5 +37,11 @@ public class SingelyLinkedList {
 
     public static void main(String[] args) {
         SingelyLinkedList linkedList=new SingelyLinkedList();
+        System.out.println(linkedList);
+    }
+
+    @Override
+    public String toString() {
+
     }
 }
