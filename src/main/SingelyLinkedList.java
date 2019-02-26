@@ -53,4 +53,8 @@ public class SingelyLinkedList {
         response.append("]");
         return response.toString();
     }
+    private void insertHead(int data)
+    {
+
+    }
 }
