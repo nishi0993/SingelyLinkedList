@@ -75,6 +75,8 @@ public class SingelyLinkedList {
         node.next=newNode;//or node.next=new Node(data,node.next)
         size++;
     }
+    public void insert(int data)
+    {
 
 
     }
