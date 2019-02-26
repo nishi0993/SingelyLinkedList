@@ -55,7 +55,8 @@ public class SingelyLinkedList {
     }
     private void insertHead(int data)
     {
-      Node newNode=new Node(data);
-
+      Node newNode=new Node(data,this.head);
+      this.head=newNode;
+      size++;
     }
 }
