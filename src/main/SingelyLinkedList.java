@@ -42,6 +42,7 @@ public class SingelyLinkedList {
 
     @Override
     public String toString() {
+        StringBuilder response= new StringBuilder();//toreduce immutability of String
 
     }
 }
