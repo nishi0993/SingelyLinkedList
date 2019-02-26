@@ -69,6 +69,12 @@ public class SingelyLinkedList {
       this.head=newNode;
       size++;
     }
+    private void insertAfter(int data,Node node)
+    {
+        Node newNode=new Node(data,node.next);
+        node.next=newNode;//or node.next=new Node(data,node.next)
+        size++;
+    }
 
 
     }
