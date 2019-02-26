@@ -38,6 +38,12 @@ public class SingelyLinkedList {
     public static void main(String[] args) {
         SingelyLinkedList linkedList=new SingelyLinkedList();
         System.out.println(linkedList);
+        linkedList.insert(66);
+       linkedList.insert(42);
+       /* for (int i = 0; i < 5; i++) {
+            linkedList.insert(i+1);
+        }*/
+        System.out.println(linkedList);
     }
 
     @Override
@@ -48,6 +54,10 @@ public class SingelyLinkedList {
         while(temp !=null)
         {
             response.append(temp.getData());//add data in response
+            if(temp.next!=null)
+            {
+                response.append(" ==> ");
+            }
             temp=temp.next;
         }
         response.append("]");
@@ -58,5 +68,8 @@ public class SingelyLinkedList {
       Node newNode=new Node(data,this.head);
       this.head=newNode;
       size++;
+    }
+
+
     }
 }
