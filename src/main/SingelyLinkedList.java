@@ -30,5 +30,8 @@ public class SingelyLinkedList {
             this.data = data;
             this.next = null;
         }
+
     }
+    private Node head;
+    private int size;
 }
