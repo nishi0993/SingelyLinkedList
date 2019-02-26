@@ -44,7 +44,11 @@ public class SingelyLinkedList {
     public String toString() {
         StringBuilder response= new StringBuilder();//toreduce immutability of String
         response.append("[");//to have brackets while printing
-        Node temp=this.head;
+        Node temp=this.head;//copy so that actual head do not change
+        while(temp !=null)
+        {
+
+        }
         response.append("]");
         return response.toString();
     }
