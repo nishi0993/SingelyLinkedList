@@ -43,6 +43,8 @@ public class SingelyLinkedList {
     @Override
     public String toString() {
         StringBuilder response= new StringBuilder();//toreduce immutability of String
-
+        response.append("[");//to have brackets while printing
+        response.append("]");
+        return response.toString();
     }
 }
