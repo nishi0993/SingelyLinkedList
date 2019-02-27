@@ -110,7 +110,17 @@ public class SingelyLinkedList {
         }
         return response;
         }
-
+    private int removeAfter(Node node)
+    {
+        int response=-1;
+        Node temp=node.next;
+        if(temp!=null){
+            response=temp.data;
+            node.next=temp.next;
+            size--;
+        }
+        return response;
+    }
     }
 
 
