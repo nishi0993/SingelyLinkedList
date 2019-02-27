@@ -48,7 +48,7 @@ public class SingelyLinkedList {
             linkedList.insert(i + 1);
         }
         System.out.println(linkedList);
-        linkedList.deleteHead();
+        linkedList.removeHead();
         System.out.println(linkedList);
     }
 
@@ -93,11 +93,24 @@ public class SingelyLinkedList {
 
     }
 
-    void deleteHead() {
+    /*void deleteHead() {
         Node temp = head.next;
         head.next = null;
         head = temp;
         size--;
+    }*/
+    private int removeHead()
+    {
+        int response=-1;
+        Node temp=this.head;
+        if(temp!=null) {
+            this.size--;
+            response=temp.data;
+            this.head=this.head.next;
+        }
+        return response;
+        }
+
     }
 
-}
+
